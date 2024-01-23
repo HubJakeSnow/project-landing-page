@@ -10,9 +10,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="//unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
 </head>
 
 <body>
+  <script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js" defer></script>
+
   <header class="primary-header">
     <div class="container">
       <div class="nav-wrapper">
@@ -41,8 +44,11 @@
       <div class="container">
         <div class="even-columns">
           <div class="flow">
-            <h1 class="fs-primary-heading fw-bold">Bring everyone together to build better products.</h1>
-            <p>Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
+            <h1 class="fs-primary-heading fw-bold">Bring everyone
+              together to build
+              better products.</h1>
+            <p>Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in
+              view.</p>
             <button class="button">Get Started</button>
           </div>
           <div>
@@ -55,28 +61,44 @@
     <section class="padding-block-900">
       <div class="container">
         <div class="even-columns">
-          <div class="flow">
+          <div class="flow text-center-sm-only margi" style="--flow-spacer: 1.5rem">
             <h2 class="fs-secondary-heading fw-bold">What’s different about Manage?</h2>
-            <p>Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>
+            <p>Manage provides all the functionality your team needs, without the complexity. Our software is
+              tailor-made for modern
+              digital product teams.</p>
           </div>
           <div>
             <ul class="numbered-items | flow" role="list">
               <li>
-                <div class="tight-flow">
-                  <h3 class="fs-600 fw-bold">Track company-wide progress</h3>
-                  <p data-width="wide">See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
+                <div class="flow" style="--flow-spacer: 1em">
+                  <h3 class="numbered-items__title | fs-600 fw-bold">Track company-wide progress</h3>
+                  <p class="numbered-items__body" data-width="wide">See how your day-to-day tasks fit into the wider
+                    vision. Go from tracking
+                    progress at the milestone
+                    level all the way
+                    done to the smallest of details. Never lose sight of the bigger picture again.</p>
                 </div>
               </li>
               <li>
-                <div class="tight-flow">
-                  <h3 class="fs-600 fw-bold">Advanced built-in reports</h3>
-                  <p data-width="wide">Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
+                <div class="flow" style="--flow-spacer: 1em">
+                  <h3 class="numbered-items__title | fs-600 fw-bold">Advanced built-in reports</h3>
+                  <p class="numbered-items__body" data-width="wide">Set internal delivery estimates and track progress
+                    toward company goals. Our
+                    customisable dashboard
+                    helps you build out
+                    the reports you need to keep key stakeholders informed.</p>
+
                 </div>
               </li>
               <li>
-                <div class="tight-flow">
-                  <h3 class="fs-600 fw-bold">Everything you need in one place</h3>
-                  <p data-width="wide">Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
+                <div class="flow" style="--flow-spacer: 1em">
+                  <h3 class="numbered-items__title | fs-600 fw-bold">Everything you need in one place</h3>
+                  <p class="numbered-items__body" data-width="wide">Stop jumping from one service to another to
+                    communicate, store files, track tasks
+                    and share
+                    documents. Manage offers an
+                    all-in-one team productivity solution.</p>
+
                 </div>
               </li>
             </ul>
@@ -88,39 +110,70 @@
     <section class="carousel | padding-block-700">
       <h2 class="fs-secondary-heading fw-bold">What they've said</h2>
       <!-- Carousel here -->
+      <ul class="slider">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+      </ul>
       <button class="button">Get Started</button>
     </section>
 
     <section class="cta | padding-block-900 bg-accent-400 text-neutral-100">
       <div class="container">
-        <div class="even-columns">
+        <div class="even-columns vertical-align-center">
           <div>
-            <p class="fs-secondary-heading fw-bold">Simplify how your team works today.</p>
+            <p class="fs-primary-heading fw-bold">Simplify how your team works today.</p>
           </div>
-          <div>
-            <button class="button | push-right" data-type="inverted">Get Started</button>
+          <div class="justify-self-end-md">
+            <button class="button" data-type="inverted">Get Started</button>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="padding-block-700 bg-neutral-900 text-neutral-100">
+  <footer class="primary-footer | padding-block-700 bg-neutral-900 text-neutral-100">
     <div class="container">
-      <div class="even-columns">
-        <div>
-          <a href="#"><img src="images/logo.svg" alt="Manage"></a>
-          <ul role="list" aria-label="Social links">
-            <li><a aria-label="facebook" href="#"></a></li>
-            <li><a aria-label="youtube" href="#"></a></li>
-            <li><a aria-label="twitter" href="#"></a></li>
-            <li><a aria-label="pinterest" href="#"></a></li>
-            <li><a aria-label="instragram" href="#"></a></li>
+      <div class="primary-footer-wrapper">
+        <div class="primary-footer-logo-social">
+          <a href="#" aria-label="home">
+            <svg class="logo" width="146" height="24">
+              <use xlink:href="images/logo.svg#logo"></use>
+            </svg>
+          </a>
+
+          <ul class="social-list" role="list" aria-label="Social links">
+            <li><a aria-label="facebook" href="#">
+                <svg class="social-icon">
+                  <use xlink:href="images/social-icons.svg#icon-facebook"></use>
+                </svg></a>
+            </li>
+            <li><a aria-label="youtube" href="#">
+                <svg class="social-icon">
+                  <use xlink:href="images/social-icons.svg#icon-youtube"></use>
+                </svg>
+              </a></li>
+            <li><a aria-label="twitter" href="#">
+                <svg class="social-icon">
+                  <use xlink:href="images/social-icons.svg#icon-twitter"></use>
+                </svg>
+              </a></li>
+            <li><a aria-label="pinterest" href="#">
+                <svg class="social-icon">
+                  <use xlink:href="images/social-icons.svg#icon-pinterest"></use>
+                </svg>
+              </a></li>
+            <li><a aria-label="instragram" href="#">
+                <svg class="social-icon">
+                  <use xlink:href="images/social-icons.svg#icon-instagram"></use>
+                </svg>
+              </a></li>
           </ul>
         </div>
-        <div>
+        <div class="primary-footer-nav">
           <nav class="footer-nav">
-            <ul class="tight-flow" aria-label="Footer" role="list">
+            <ul class="flow" style="--flow-spacer: 1em" aria-label="Footer" role="list">
               <li><a href="#">Home</a></li>
               <li><a href="#">Pricing</a></li>
               <li><a href="#">Products</a></li>
@@ -131,16 +184,17 @@
             </ul>
           </nav>
         </div>
-        <div>
+        <div class="primary-footer-form">
           <form action="">
             <input type="email">
-            <button class="button">Go</button>
-            <p>Copyright 2024. All Rights Reserved</p>
+            <button class="button" data-shadow="none">Go</button>
           </form>
+          <p>Copyright 2024. All Rights Reserved</p>
         </div>
       </div>
     </div>
   </footer>
+
 
   <script type="module" src="/main.js"></script>
 </body>
