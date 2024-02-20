@@ -765,6 +765,7 @@ input:where([type="text"], [type="email"], ) {
 
 .mx-auto {
   margin-inline: auto;
+  border-radius: 15px;
 }
 
 .display-sm-none {
